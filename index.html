@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Salary Prediction</h1>
+
+<div class="container">
+
+    <label>Job Title:</label>
+    <select id="job_title">
+        <option>AI Engineer</option>
+        <option>Data Analyst</option>
+        <option>Frontend Developer</option>
+        <option>Business Analyst</option>
+        <option>Product Manager</option>
+    </select>
+
+    <br>
+
+    <label>Experience Years:</label>
+    <input type="number" id="experience">
+
+    <label>Education Level:</label>
+    <select id="education">
+        <option>Bachelor</option>
+        <option>Master</option>
+        <option>PhD</option>
+    </select>
+
+    <br>
+
+    <label>Skills Count:</label>
+    <input type="number" id="skills">
+
+    <br>
+
+    <label>Industry:</label>
+    <select id="industry">
+        <option>Healthcare</option>
+        <option>Telecom</option>
+        <option>Media</option>
+        <option>Retail</option>
+        <option>Manufacturing</option>
+    </select>
+
+    <br>
+
+    <label>Company Size:</label>
+    <select id="company">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+    </select>
+
+    <br>
+
+    <label>Location:</label>
+    <select id="location">
+        <option>India</option>
+        <option>Australia</option>
+        <option>Singapore</option>
+        <option>Canada</option>
+        <option>Sweden</option>
+        <option>Netherlands</option>
+        <option>Germany</option>
+        <option>UK</option>
+    </select>
+
+    <br>
+
+    <label>Remote Work:</label>
+    <select id="remote">
+        <option>Yes</option>
+        <option>No</option>
+        <option>Hybrid</option>
+    </select>
+
+    <br>
+
+    <label>Certifications:</label>
+    <input type="number" id="certs">
+
+    <button onclick="predict()">Vorhersage berechnen</button>
+
+    <h2 id="result"></h2>
+
+</div>
+
+<script src="predict.js"></script>
+
+</body>
+</html>
